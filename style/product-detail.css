@@ -1,0 +1,241 @@
+body{
+    font-family: 'Barlow', sans-serif;
+}
+#product-detail-page {
+    background: #f5f5fa;
+    padding-bottom: 200px;
+}
+.container {
+    max-width: 1280px;
+    padding: 0 20px;
+    margin: auto;
+}
+.product-detail{
+    display: flex;
+    gap: 50px;
+    padding-top: 160px;
+}
+.info-product{
+    width: 70%;
+}
+.img-product-detail img{
+    width: 350px !important;
+}
+.name-product h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.price-product{
+    color: #d3b673;
+    font-size: 26px;
+    margin: 20px 0;
+}
+.price-product p{
+    margin: 0 0 10px 0;
+}
+.title-option{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.add-topping{
+    display: flex ;
+    /* grid-template-columns: repeat(3,1fr); */
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.option-item > label{
+    margin-right: 20px;
+}
+.option-inline{
+    display: flex;
+    gap: 50px;
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.quantity span{
+    margin-right: 30px;
+}
+.quantity button{
+    width: 24px;
+    height: 24px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+.quantity button:hover{
+    background-color: #d3b673;
+    border-color:#d3b673 ;
+    color: white;
+}
+.quantity input{
+    width: 50px;
+    border: none;
+    height: 24px;
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+}
+.buy-now{
+    margin-top: 20px;
+}
+.buy-now button{
+    background-color: #d3b673;
+    border:none;
+    color: white;
+    outline: none;
+    width: 210px;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all ease .2s;
+    text-transform: uppercase;
+}
+.buy-now button:hover{
+    background-color: #8d6c20;
+}
+.product-detail-bottom{
+    margin-top: 80px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.box-left-bot{
+    width: 70%;
+}
+.description {
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.description h3 {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.description p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+}
+.box-right-bot{
+    width: 30%;
+}
+.list-product-sale{
+    list-style: none;
+    padding: 0;
+    
+}
+.item-product-sale{
+    display: flex;
+    padding: 5px 10px;
+    gap: 10px;
+    border-bottom: 1px solid rgb(239, 239, 239);
+}
+.item-product-sale > img{
+    width: 80px !important;
+}
+.product-sale{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+.product-sale p,h3{
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-transform: capitalize;
+    color: var(--black-color-p);
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.none-border-list{
+    border:none;
+}
+.best-sale{
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.best-sale h2{
+    text-align: center;
+    margin: 0;
+    background-color: #d3b673;
+    padding:10px 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:970px) { 
+    .img-product-detail img{
+        width: 300px !important;
+    }
+    .option-inline{
+        font-size: 14px;
+    }
+    .add-topping{
+        /* grid-template-columns: repeat(2,1fr); */
+    }
+    .box-left-bot{
+        width: 60%;
+    }
+    .box-right-bot{
+        width: 40%;
+    }
+}
+@media screen and (max-width:760px) { 
+    .option-inline{
+        font-size: 14px;
+    }
+    .img-product-detail img{
+        width: 250px !important;
+    }
+    .add-topping{
+        /* grid-template-columns: auto; */
+    }
+    .option-inline{
+        gap: 0;
+        flex-wrap: wrap;
+    }
+    .box-right-bot,.box-left-bot{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .product-detail-bottom{
+        display: block;
+    }
+}
+@media screen and (max-width:500px) { 
+    .option-inline{
+        font-size: 12px;
+    }
+    .product-detail{
+        display: block;
+    }
+    .info-product{
+        width: 100%;
+    }
+    .img-product-detail{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .container{
+        padding: 5px;
+    }
+    .name-product{
+        font-size: 14px;
+    }
+    .box-right-bot,.box-left-bot{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
